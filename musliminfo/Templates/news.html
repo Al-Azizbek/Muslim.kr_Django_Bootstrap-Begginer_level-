@@ -1,0 +1,391 @@
+{% load static%}
+<html>
+<head>
+  <!-- this is  the main header of the page which i used to all pages-->
+   
+  <title>Website for muslims in Korea</title>
+	
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css'%}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css'%}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="{%static 'css/extra.css'%}">
+   <link rel="stylesheet" type="text/css" href="{%static 'css/home.css'%}">
+   
+   <link rel="stylesheet" type="text/css" href="{%static 'css/new.css'%}">
+   <link rel="stylesheet" type="text/css" href="{%static 'css/contact.css'%}">
+   <link rel="stylesheet" type="text/css" href="{%static 'css/news.css'%}">
+   
+   <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil&display=swap" rel="stylesheet">
+    <style type="text/css">
+      body{
+        background-image: url("{% static '/img/jean.png' %}");
+        background-repeat: repeat;
+      }
+      body .container{
+        background-image: url("{% static '/img/sky.jgp' %}");
+       
+      }
+      .row  {
+      : ;
+      }
+
+
+    </style>
+</head>
+ <!-- all body starts from here-->
+<body>	
+ <header>
+	
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="position: fixed; width: 100%">
+	
+   <div class="container-fluid">
+	  <a class="navbar-brand col-1 "  href="{% url 'home' %}" ><img src="{% static '/img/logomain.png' %}" height="50px"></a>
+		
+		<button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">	
+			<span class="navbar-toggler-icon">	</span>
+		</button>
+		
+		<div class="collapse navbar-collapse col-6" id="navbarResponsive " >	
+              <ul class="navbar-nav ml-auto nav justify-content-end hover" >
+                    <li class="nav-item active"> 
+                    	<a class="nav-link" style="font-family: 'Allerta Stencil', sans-serif;" href="{% url 'home' %}">Home</a>	
+                    </li>
+                     <li class="nav-item"> 
+                    	<a class="nav-link" style="font-family: 'Allerta Stencil', sans-serif;" href="{% url 'aboutus' %}">About us</a>	
+                    </li>
+                     <li class="nav-item"> 
+                    	<a class="nav-link" style="font-family: 'Allerta Stencil', sans-serif;" href="{% url 'news' %}">News</a>	
+                    </li>
+                    
+                     <li class="nav-item"> 
+                    	<a class="nav-link" style="font-family: 'Allerta Stencil', sans-serif;" href="{% url 'charity' %}">Charity</a>	
+                    </li>
+                    </li>
+                     <li class="nav-item"> 
+                      <a class="nav-link" style="font-family: 'Allerta Stencil', sans-serif;" href="{% url 'calendar' %}">Calendar</a> 
+                    </li>
+                   
+                     <li class="nav-item"> 
+                    	<a class="nav-link" style="font-family: 'Allerta Stencil', sans-serif;" href="{% url 'contact' %}">Contact</a>	
+                    </li>	
+              </ul>
+
+		</div>
+
+	<form class="form-inline form1" action="/action_page.php col ">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-danger" type="submit">Search</button>
+    </form>
+
+    <div class="col-3">
+			<a href="">
+				<button class="btn btn-primary ">Sign Up - Free!</button>
+			</a>
+			<a href="">
+				<button class="btn btn-primary">Log In</button>
+			</a>
+		</div>
+		
+	</div>
+ </nav>
+
+
+
+
+
+<div class="" style="padding-top: 130px;" >
+
+
+
+
+  <div class="row mb-2 allnews" style="background-color: #f5f5f5;">
+    <div class="col-6 news1">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary"> Jammu and Kashmir, India</strong>
+          <h3 class="mb-0">Jammu & Kashmir: Brutal lockdown puts education on back burner</h3>
+          <div class="mb-1 text-muted">2nd Dec 2019</div>
+          <p class=" mb-auto">SRINAGAR, Jammu and Kashmir, India, (AA): Aafreen Zaira, a media student at the Women’s College Srinagar in the capital of Indian Jammu and Kashmir, is looking keenly at a model paper which has 14 questions to tackle in two hours.</p>
+          <a href="http://muslimnews.co.uk/news/south-asia/jammu-kashmir-brutal-lockdown-puts-education-back-burner/" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="{% static '/img/news1.jpg' %}" height="240px" width="280px" style="border-radius: 15px; border: 10px solid transparent;">
+        </div>
+      </div>
+    </div>
+    <div class="col-6 news2" style="background-color: #f5f5f5;">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">KUALA LUMPUR, Malaysia (AA</strong>
+          <h3 class="mb-0">Bangladesh: Over 100 Rohingya refugees rescued off Bangladesh coast</h3>
+          <div class="mb-1 text-muted">15th Nov 2019</div>
+          <p class="mb-auto">KUALA LUMPUR, Malaysia (AA): More than 100 Rohingya refugees were rescued Friday before their wooden boat sank off the southern coast of Bangladesh.According to a statement from the Bangladesh Coast Guard, the refugees were ...</p>
+          <a href="http://muslimnews.co.uk/news/south-asia/bangladesh-100-rohingya-refugees-rescued-off-bangladesh-coast/" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="{% static '/img/news2.jpg' %}" height="240px" width="280px" style="border-radius: 15px; border: 10px solid transparent;">
+        </div>
+      </div>
+    </div>
+  </div>
+   <div class="col-12 news3" style="background-color: #f5f5f5;">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">KARACHI, Pakistan (AA)</strong>
+          <h3 class="mb-0">Pakistan opens Kartarpur border for Indian Sikh pilgrims</h3>
+          <div class="mb-1 text-muted">10th Nov 2019</div>
+          <p class="mb-auto"> KARACHI, Pakistan (AA): Pakistan on Saturday opened a key border crossing with neighboring India for Sikh pilgrims ahead of the 550th birth anniversary of Baba Guru Nanak, founder of their religion.With a giant gate opened with a clutter at Zero Point — a border that connects Pakistan’s northeastern Narowal district to Indian Gurdaspir city — a group of Sikh pilgrims, men and women, led by former Indian Premier Manmohan Singh entered Pakistani side of the border to mark the official opening of the crossing. "This is a historic moment,” the two-time Indian premier told reporters in a brief talk, thanking Prime Minister Imran for “understanding India’s wishes and turning Kartarpur into reality”.The delegation also included Chief Minister of India’s Punjab state Amrindar Singh, and other dignitaries.</p>
+          <a href="http://muslimnews.co.uk/news/south-asia/pakistan-opens-kartarpur-border-indian-sikh-pilgrims/" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="{% static '/img/news3.jpg' %}" height="330px" width="480px" style="border-radius: 15px; border: 10px solid transparent;">
+        </div>
+      </div>
+  </div>
+  <div class="col-12 news3" style="background-color: #f5f5f5; border-width: 15px;">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">US, the Council on American-Islamic Relations (CAIR)</strong>
+          <h3 class="mb-0">26 American Muslims win in the November elections</h3>
+          <div class="mb-1 text-muted">29th Nov 2019</div>
+          <p class="mb-auto">26 Muslims won in state and local elections races across the US, the Council on American-Islamic Relations (CAIR) announced. Elections were held, in large part, on November 5.81 Muslim candidates ran for elections held in Kentucky, Louisiana, and Mississippi, regularly scheduled state legislative elections in Louisiana, Mississippi, Virginia, and New Jersey, and special elections for seats in various state legislatures.Numerous citizen initiatives, mayoral races, and a variety of other local elections also occurred.The November tally takes the total number of Muslim candidates elected this year to 34. Since 2016, more than 300 Muslim candidates, including more than 100 women, have run for elected office nationwide.</p>
+          <a href="http://muslimnews.co.uk/newspaper/world-news/26-american-muslims-win-november-elections/" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+           <img src="{% static '/img/news4.jpg' %}" height="330px" width="480px" style="border-radius: 15px; border: 10px solid transparent;">
+        </div>
+      </div>
+  </div>
+  <div class="col-12 news3" style="background-color: #f5f5f5;">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">WASHINGTON (AA): Uygur</strong>
+          <h3 class="mb-0">China forces show ‘no mercy’ to Uyghur Muslims</h3>
+          <div class="mb-1 text-muted">17th Nov 2019</div>
+          <p class="mb-auto">WASHINGTON (AA): Leaked files Saturday revealed an unprecedented inside view of the Chinese continuing clampdown on ethnic Uyghurs in China’s autonomous Xinjiang province.Chinese President Xi Jinping urged security forces to “show absolutely no mercy” to minorities, as cited by the New York Times, which obtained 403 pages of internal government documents.The documents included nearly 200 pages of internal speeches by Xi and other leaders, and more than 150 pages of directives and reports on surveillance and control of the Uyghur Muslim population in Xinjiang.
+
+“We must be as harsh as them,” Xi stressed after inspecting a counterterrorism police squad in Urumqi, the capital of Xinjiang.</p>
+          <a href="http://muslimnews.co.uk/news/far-east/china-demands-forces-show-no-mercy-uyghur-muslims/" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="{% static '/img/news5.jpg' %}" height="330px" width="480px" style="border-radius: 15px; border: 10px solid transparent;">
+        </div>
+      </div>
+  </div>
+ <div class="container" style="background-color: #f5f5f5; padding-right: 80px;">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        <h2>UK: Eid Al Adha messages from Political Leaders</h2>
+        <p>“On behalf of the Scottish Government and the people of Scotland I would like to extend my warmest wishes to Muslims in Scotland who are celebrating Eid al-Adha.“This day marks the end of the Hajj and new beginnings for the pilgrims in Makkah and is also a time of reflection for friends and families. </p>
+        <img src="{% static '/img/news1.1.jpg' %}" height="310px" width="430px" style="border-radius: 15px; border: 10px solid transparent;">
+        <p><a class="btn btn-primary" href="http://muslimnews.co.uk/news/uk/uk-eid-al-adha-messages-political-leaders/" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Iraqi Muslims urge Christian neighbours to return home</h2>
+        <p>BAGHDAD (AA): Scores of young Iraqi Muslims have taken part in the restoration of the Middle East’s second largest church, urging their displaced Christian neighbors to return to their homes.“Dozens of young Muslim volunteers from the city of Mosul took part in the restoration of the Chaldean...</p>
+         <img src="{% static '/img/news1.2.jpg' %}" height="310px" width="430px" style="border-radius: 15px; border: 10px solid transparent;">
+        <p><a class="btn btn-primary" href="http://muslimnews.co.uk/news/religion/iraqi-muslims-urge-christian-neighbours-to-return-home/" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Palestine: Israel unveils new synagogue in Al-Aqsa Mosque</h2>
+        <p>JERUSALEM (AA): The Israeli authorities on Tuesday unveiled a new Jewish synagogue under the Al-Buraq Wall –known to Jews as the Western Wall– in occupied East Jerusalem’s Al-Aqsa Mosque compound.“Following 12 years of construction, the new synagogue was opened on Monday evening,”...</p>
+         <img src="{% static '/img/news1.3.jpg' %}" height="310px" width="430px" style="border-radius: 15px; border: 10px solid transparent;">
+
+        <p><a class="btn btn-primary" href="http://muslimnews.co.uk/news/religion/palestine-israel-unveils-new-synagogue-jerusalems-al-aqsa-mosque/" role="button">View details &raquo;</a></p>
+      </div>
+    </div>
+
+    <hr>
+
+  </div> <!-- /container -->
+
+ 
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ 
+  
+
+
+
+<!--the stable footer form is starts from  here-->
+
+<footer class="page-footer font-small unique-color-dark rw1" >
+
+  <div class="btn btn-primary">
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0" >
+          <h6 class="mb-0 text-lig  ht">Urinov Azizbek 20162672 Dongseo University Capstone Design</h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f white-text mr-4"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter white-text mr-4"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram white-text"> </i>
+          </a>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5 ">
+
+    <!-- Grid row -->
+    <div class="row mt-3 ">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Muslim.kr</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p style="color: white">Muslim Charity is an international relief and development non-governmental organization that aims to alleviate the suffering of the world's poorest people.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold ft1">Products</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">Online Shopping</a>
+        </p>
+        <p>
+          <a href="#!">Answers and Questions</a>
+        </p>
+        <p>
+          <a href="#!">News and Schedule</a>
+        </p>
+        <p>
+          <a href="#!">Chrity</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold ft1">Useful links</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">Your Account</a>
+        </p>
+        <p>
+          <a href="#!">Comments</a>
+        </p>
+        <p>
+          <a href="#!">Shipping products</a>
+        </p>
+        <p>
+          <a href="#!">Help</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-2 col-xl-3 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold ft1">Contact</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p class="ft1">
+          <i class="fas fa-home mr-3"></i> South Korea, Busan, Dongseo University</p>
+        <p class="ft1" >
+          <i class="fas fa-envelope mr-3"></i> urinovazizbek@gmail.com</p>
+        <p class="ft1">
+          <i class="fas fa-phone mr-3"></i> 010 4868 9910</p>
+        <p class="ft1">
+          <i class="fas fa-print mr-3"></i> 010 4868 9910</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 ft1">© 2019 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> Muslim.kr</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+ 
+</body>
+
+
+
+
+
+</html>

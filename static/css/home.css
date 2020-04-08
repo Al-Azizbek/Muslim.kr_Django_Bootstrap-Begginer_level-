@@ -1,0 +1,95 @@
+.thum1 {
+	margin-top: 0px;
+}
+
+
+
+.container{
+	min-width: 1500px;
+}
+.row h1 p {
+	padding-right: 50px;
+}
+
+.companyinfo {
+	font-family: "Times New Roman", Times, serif;
+	margin-left: 80px;
+	font-size: 16px;
+}
+.thumbnail{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+
+}
+.companyinfo1 {
+	font-family: "Times New Roman", Times, serif;
+	margin-left: 30px;
+
+}
+.aboutcompany{
+	font-family: "Times New Roman", Times, serif;
+	margin-left: 400px;
+
+}	
+.col-lg-3{
+	margin-left: 80px;
+	background-color:#FCFCFC;
+	
+}
+.thumbnail{
+	background-color:#FCFCFC;
+}
+.containermarketing{
+	margin-top: 30px;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+
+}
+footer{
+	margin-top: 30px;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+}
+svg{
+	margin-left: 100px;
+}
+.containermarketing h2{
+	margin-left: 100px;
+
+}
+.round1{
+	margin-left: 110px;
+	width: 120px;
+
+}
+.rw1{
+	background-color: #2b2a2a;
+}
+
+.ft1{
+	color: white;
+}
+.hover li a:hover{
+	
+
+}
+.hover a {
+    margin-right: 30px;
+    color:#2b2a2a !important;
+    border-bottom: 2px solid transparent;
+}
+
+.hover a:hover {
+    border-bottom: 6px solid #dc3545;
+    background-color: ;
+    
+}
+
+.active a {
+    border-bottom: 4px solid #dc3545;
+
+}
+.hover{
+	font-family: 'Allerta Stencil', sans-serif;
+}
+

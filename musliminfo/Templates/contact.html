@@ -1,0 +1,320 @@
+{% load static%}
+<html>
+<head>
+  <!-- this is  the main header of the page which i used to all pages-->
+   
+  <title>Website for muslims in Korea</title>
+	
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css'%}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css'%}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="{%static 'css/extra.css'%}">
+   <link rel="stylesheet" type="text/css" href="{%static 'css/home.css'%}">
+   
+   <link rel="stylesheet" type="text/css" href="{%static 'css/new.css'%}">
+   <link rel="stylesheet" type="text/css" href="{%static 'css/contact.css'%}">
+   
+   <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil&display=swap" rel="stylesheet">
+    <style type="text/css">
+      body{
+        background-image: url("{% static '/img/jean.png' %}");
+        background-repeat: repeat;
+      }
+      body .container{
+        background-image: url("{% static '/img/sky.jgp' %}");
+       
+      }
+      .row  {
+      : red;
+      }
+
+
+    </style>
+</head>
+ <!-- all body starts from here-->
+<body>	
+ <header>
+	
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="position: fixed; width: 100%">
+	
+   <div class="container-fluid">
+	  <a class="navbar-brand col-1 "  href="{% url 'home' %}" ><img src="{% static '/img/logo1.jpg' %}" height="50px"></a>
+		
+		<button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">	
+			<span class="navbar-toggler-icon">	</span>
+		</button>
+		
+		<div class="collapse navbar-collapse col-6" id="navbarResponsive " >	
+              <ul class="navbar-nav ml-auto nav justify-content-end hover" >
+                    <li class="nav-item active"> 
+                    	<a class="nav-link" style="font-family: 'Allerta Stencil', sans-serif;" href="{% url 'home' %}">Home</a>	
+                    </li>
+                     <li class="nav-item"> 
+                    	<a class="nav-link" style="font-family: 'Allerta Stencil', sans-serif;" href="{% url 'aboutus' %}">About us</a>	
+                    </li>
+                     <li class="nav-item"> 
+                    	<a class="nav-link" style="font-family: 'Allerta Stencil', sans-serif;" href="{% url 'news' %}">News</a>	
+                    </li>
+                    
+                     <li class="nav-item"> 
+                    	<a class="nav-link" style="font-family: 'Allerta Stencil', sans-serif;" href="{% url 'charity' %}">Charity</a>	
+                    </li>
+                    </li>
+                     <li class="nav-item"> 
+                      <a class="nav-link" style="font-family: 'Allerta Stencil', sans-serif;" href="{% url 'calendar' %}">Calendar</a> 
+                    </li>
+                   
+                     <li class="nav-item"> 
+                    	<a class="nav-link" style="font-family: 'Allerta Stencil', sans-serif;" href="{% url 'contact' %}">Contact</a>	
+                    </li>	
+              </ul>
+
+		</div>
+
+	<form class="form-inline form1" action="/action_page.php col ">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-danger" type="submit">Search</button>
+    </form>
+
+    <div class="col-3">
+			<a href="">
+				<button class="btn btn-primary ">Sign Up - Free!</button>
+			</a>
+			<a href="">
+				<button class="btn btn-primary">Log In</button>
+			</a>
+		</div>
+		
+	</div>
+ </nav>
+
+
+
+<!--all container starts from here-->
+
+<div class="container1">
+  <div class="row-6 Disclaimer">
+   <marquee class="btn-primary"> <p class="btn-primary"><span class="btn-danger"><b>Disclaimer:</b></span>  "Muslim.kr" is online support platform. Please, use website in a right way. Don't try to change website purpose and don't send scams to other users. Because " We are stronger together!". Thank you to support us.</p></marquee>
+  </div>
+  
+ 
+  <div class="row">
+<!--this is the iframe for map of the contact page-->
+    <div class="column">
+      <h1 class="details1">Contact us </h1>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.5093595341145!2d129.00837081525614!3d35.14391558032305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568ea3fa4df8c35%3A0x94ed0001e8a699f5!2sDongseo%20University!5e0!3m2!1sen!2skr!4v1573462238327!5m2!1sen!2skr" width="700" height="550" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>  
+    <div class="column cl2">
+      <h1 class="details2"></h1>
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Enter your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Enter your surname..">
+        <label for="fname">Gmail/Email</label>
+        <input type="text" id="fname" name="gmail" placeholder="Enter your Gmail/Email..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="selectcountry">--select country--</option>
+          <option value="canada"></option>
+          <option value="usa">USA</option>
+          <option value="uk">UK</option>
+          <option value="Afghanistan">Afghanistan</option>
+          <option value="usa">Alegera</option>
+          <option value="australia">Andorra</option>
+          <option value="canada">Angola</option>
+          <option value="usa">China</option>
+          <option value="australia">Japan</option>
+          <option value="canada">Canada</option>
+          <option value="usa">Myanmar</option>
+          <option value="usa">Brazil</option>
+          <option value="australia">Colombia</option>
+          <option value="canada">Egypt</option>
+          <option value="usa">Estona</option>
+          <option value="australia">El Salvador</option>
+          <option value="canada">Qatar</option>
+          <option value="usa">Uzbekistan</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input class="btn-primary btn" type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<!--the stable footer form is starts from  here-->
+
+<footer class="page-footer font-small unique-color-dark rw1" >
+
+  <div class="btn btn-primary">
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0" >
+          <h6 class="mb-0 text-lig  ht">Urinov Azizbek 20162672 Dongseo University Capstone Design</h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f white-text mr-4"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter white-text mr-4"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram white-text"> </i>
+          </a>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5 ">
+
+    <!-- Grid row -->
+    <div class="row mt-3 ">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Muslim.kr</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p style="color: white">Muslim Charity is an international relief and development non-governmental organization that aims to alleviate the suffering of the world's poorest people.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold ft1">Products</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">Online Shopping</a>
+        </p>
+        <p>
+          <a href="#!">Answers and Questions</a>
+        </p>
+        <p>
+          <a href="#!">News and Schedule</a>
+        </p>
+        <p>
+          <a href="#!">Chrity</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold ft1">Useful links</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">Your Account</a>
+        </p>
+        <p>
+          <a href="#!">Comments</a>
+        </p>
+        <p>
+          <a href="#!">Shipping products</a>
+        </p>
+        <p>
+          <a href="#!">Help</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-2 col-xl-3 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold ft1">Contact</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p class="ft1">
+          <i class="fas fa-home mr-3"></i> South Korea, Busan, Dongseo University</p>
+        <p class="ft1" >
+          <i class="fas fa-envelope mr-3"></i> urinovazizbek@gmail.com</p>
+        <p class="ft1">
+          <i class="fas fa-phone mr-3"></i> 010 4868 9910</p>
+        <p class="ft1">
+          <i class="fas fa-print mr-3"></i> 010 4868 9910</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 ft1">© 2019 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> Muslim.kr</a>
+  </div>
+  <!-- Copyright -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</footer>
+<!-- Footer -->
+
+
+ 
+</body>
+
+
+
+
+
+</html>

@@ -1,0 +1,331 @@
+{% load static%}
+<html>
+<head>
+   
+  <title>Website for muslims in Korea</title>
+	
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css'%}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css'%}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="{%static 'css/extra.css'%}">
+   
+   
+   <link rel="stylesheet" type="text/css" href="{%static 'css/new.css'%}">
+   <link rel="stylesheet" type="text/css" href="{%static 'css/contact.css'%}">
+   <link rel="stylesheet" type="text/css" href="{%static 'css/aboutus.css'%}">
+   <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="{%static 'css/home.css'%}">
+    <style type="text/css">
+      body{
+        background-image: url("{% static '/img/jean.png' %}");
+        background-repeat: repeat;
+      }
+      
+      .row  {
+      : red;
+      }
+     
+
+
+    </style>
+</head>
+ 
+<body>	
+ <header>
+	
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="position: fixed; width: 100%">
+	
+   <div class="container-fluid">
+	  <a class="navbar-brand col-1 "  href="{% url 'home' %}" ><img src="{% static '/img/logo1.jpg' %}" height="50px"></a>
+		
+		<button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">	
+			<span class="navbar-toggler-icon">	</span>
+		</button>
+		
+		<div class="collapse navbar-collapse col-6" id="navbarResponsive " >	
+              <ul class="navbar-nav ml-auto nav justify-content-end hover "  >
+                    <li class="nav-item active " > 
+                    	<a class="nav-link" style="font-family: 'Allerta Stencil', sans-serif;" href="{% url 'home' %}">Home</a>	
+                    </li>
+                     <li class="nav-item"> 
+                    	<a class="nav-link" style="font-family: 'Allerta Stencil', sans-serif;" href="{% url 'aboutus' %}">About us</a>	
+                    </li>
+                     <li class="nav-item"> 
+                    	<a class="nav-link" style="font-family: 'Allerta Stencil', sans-serif;" href="{% url 'news' %}">News</a>	
+                    </li>
+                     
+                     <li class="nav-item"> 
+                    	<a class="nav-link" style="font-family: 'Allerta Stencil', sans-serif;" href="{% url 'charity' %}">Charity</a>	
+                    </li>
+                    </li>
+                     <li class="nav-item"> 
+                      <a class="nav-link" style="font-family: 'Allerta Stencil', sans-serif;" href="{% url 'calendar' %}">Calendar</a> 
+                    </li>
+                   
+                     <li class="nav-item"> 
+                    	<a class="nav-link" style="font-family: 'Allerta Stencil', sans-serif;" href="{% url 'contact' %}">Contact</a>	
+                    </li>	
+              </ul>
+
+		</div>
+
+	<form class="form-inline form1" action="/action_page.php col ">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-danger" type="submit">Search</button>
+    </form>
+
+    <div class="col-3">
+			<a href="">
+				<button class="btn btn-primary ">Sign Up - Free!</button>
+			</a>
+			<a href="">
+				<button class="btn btn-primary">Log In</button>
+			</a>
+		</div>
+		
+	</div>
+ </nav>
+
+
+ 
+ 
+
+<div class="jum" >
+  <img class="card-img-top" src="{% static '/img/banner.jpg' %} " style="height: 350px;">
+  <div class="card-img-overlay">
+    
+    <h1 class="card-title1">Calendar</h1>
+    <p class="slogan">There are a lot of important days for Muslims like Ramadan, Ashura, Hajj which Muslims shouldn't miss. Each muslim should care about these festivals because some of them just celebrate one or two times in one year. Our purpose to warn muslims about them on time.</p>
+    <div class="read" style="padding-left: 1000px;">
+    <button type="button" class="btn btn-danger redmore" data-toggle="modal" data-target="#exampleModalScrollable3"> <b>Go to Calendar</b> </button>
+    </div>
+<!-- Modal -->
+<div class="modal fade calendarpic" id="exampleModalScrollable3" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle3" aria-hidden="true" style="background-color:none;">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content" style="background-color:white; width: 830px;">
+      <div class="modal-header" >
+        <h5 class="modal-title" id="exampleModalScrollableTitle3" style="font-size: 24px; font-family: 'Allerta Stencil', sans-serif; ">Calendar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%234285F4&amp;ctz=Asia%2FSeoul&amp;src=dXJpbm92YXppemJlazEyMzQ1Njc4OUBnbWFpbC5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%233366CC&amp;color=%23329262&amp;showTitle=0&amp;showNav=1&amp;showTabs=0&amp;showTz=1" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-primary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+  </div>
+  <div class="container" style="background-color: #f5f5f5; padding-right: 120px; ">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Ramadan (Islamic month of Fasting)</h2>
+        <p>Ramadan is the 9th month of the Islamic calendar, during which Muslims fast daily from dawn to sunset as part of an effort towards self-purification and moral excellence...</p>
+        <img src="{% static '/img/cal01.jpg' %}" height="310px" width="430px" style="border-radius: 15px; border: 10px solid transparent;">
+        <p><a class="btn btn-danger" href="https://ing.org/calendar-of-important-islamic-dates/" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Hajj 2020</h2>
+        <p>Hajj 2020: The online applications for Hajj 2020 will be accepted between October 10 and November 10 this year. Click on hajcommittee.gov.in to fill the online Hajj application form...</p>
+         <img src="{% static '/img/cal02.jpg' %}" height="310px" width="430px" style="border-radius: 15px; border: 10px solid transparent;">
+        <p><a class="btn btn-danger" href="https://www.ndtv.com/india-news/hajj-2020-application-process-starts-october-10-last-date-direct-link-how-to-apply-online-mobile-app-2114552" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Ashura around the world in 2020</h2>
+        <p>The Day of Ashura is the 10th day of Muharram in the Islamic calendar. It marks the Remembrance of Muharram but not the Islamic month. Ashura falls on the 10th of Muharram, the first month of the Islamic calendar. </p>
+         <img src="{% static '/img/cal03.png' %}" height="310px" width="430px" style="border-radius: 15px; border: 10px solid transparent;">
+
+        <p><a class="btn btn-danger" href="https://www.officeholidays.com/holidays/ashura" role="button">View details &raquo;</a></p>
+      </div>
+    </div>
+
+    <hr>
+
+  </div> 
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="page-footer font-small unique-color-dark rw1" >
+
+  <div class="btn btn-primary">
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0" >
+          <h6 class="mb-0 text-lig  ht">Urinov Azizbek 20162672 Dongseo University Capstone Design</h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f white-text mr-4"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter white-text mr-4"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram white-text"> </i>
+          </a>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5 ">
+
+    <!-- Grid row -->
+    <div class="row mt-3 ">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Muslim.kr</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p style="color: white">Muslim Charity is an international relief and development non-governmental organization that aims to alleviate the suffering of the world's poorest people.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold ft1">Products</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">Online Shopping</a>
+        </p>
+        <p>
+          <a href="#!">Answers and Questions</a>
+        </p>
+        <p>
+          <a href="#!">News and Schedule</a>
+        </p>
+        <p>
+          <a href="#!">Chrity</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold ft1">Useful links</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">Your Account</a>
+        </p>
+        <p>
+          <a href="#!">Comments</a>
+        </p>
+        <p>
+          <a href="#!">Shipping products</a>
+        </p>
+        <p>
+          <a href="#!">Help</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-2 col-xl-3 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold ft1">Contact</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p class="ft1">
+          <i class="fas fa-home mr-3"></i> South Korea, Busan, Dongseo University</p>
+        <p class="ft1" >
+          <i class="fas fa-envelope mr-3"></i> urinovazizbek@gmail.com</p>
+        <p class="ft1">
+          <i class="fas fa-phone mr-3"></i> 010 4868 9910</p>
+        <p class="ft1">
+          <i class="fas fa-print mr-3"></i> 010 4868 9910</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 ft1">© 2019 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> Muslim.kr</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+ 
+</body>
+
+
+
+
+
+</html>

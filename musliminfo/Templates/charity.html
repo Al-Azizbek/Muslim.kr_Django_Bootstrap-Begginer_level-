@@ -1,0 +1,428 @@
+{% load static%}
+<html>
+<head>
+   
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>Pricing example · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/pricing/">
+
+    <!-- Bootstrap core CSS -->
+<link href="/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css'%}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css'%}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="{%static 'css/extra.css'%}">
+   
+   
+   <link rel="stylesheet" type="text/css" href="{%static 'css/new.css'%}">
+   <link rel="stylesheet" type="text/css" href="{%static 'css/contact.css'%}">
+   <link rel="stylesheet" type="text/css" href="{%static 'css/aboutus.css'%}">
+   <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="{%static 'css/home.css'%}">
+   <link rel="stylesheet" type="text/css" href="{%static 'css/charity.css'%}">
+    <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+  <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
+  <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <style type="text/css">
+      body{
+        background-image: url("{% static '/img/jean.png' %}");
+        background-repeat: repeat;
+      }
+      body .container{
+        background-image: url("{% static '/img/sky.jgp' %}");
+       
+      }
+      .row  {
+      : red;
+      }
+      .all{
+          background-color: #2b2a2a;
+
+
+      }
+
+
+    </style>
+</head>
+ 
+<body>	
+ <header>
+	
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="position: fixed; width: 100%">
+	
+   <div class="container-fluid">
+	  <a class="navbar-brand col-1 "  href="{% url 'home' %}" ><img src="{% static '/img/logo1.jpg' %}" height="50px"></a>
+		
+		<button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">	
+			<span class="navbar-toggler-icon">	</span>
+		</button>
+		
+		<div class="collapse navbar-collapse col-6" id="navbarResponsive " >	
+              <ul class="navbar-nav ml-auto nav justify-content-end hover "  >
+                    <li class="nav-item active " > 
+                    	<a class="nav-link" style="font-family: 'Allerta Stencil', sans-serif;" href="{% url 'home' %}">Home</a>	
+                    </li>
+                     <li class="nav-item"> 
+                    	<a class="nav-link" style="font-family: 'Allerta Stencil', sans-serif;" href="{% url 'aboutus' %}">About us</a>	
+                    </li>
+                     <li class="nav-item"> 
+                    	<a class="nav-link" style="font-family: 'Allerta Stencil', sans-serif;" href="{% url 'news' %}">News</a>	
+                    </li>
+                    
+                     <li class="nav-item"> 
+                    	<a class="nav-link" style="font-family: 'Allerta Stencil', sans-serif;" href="{% url 'charity' %}">Charity</a>	
+                    </li>
+                    </li>
+                     <li class="nav-item"> 
+                      <a class="nav-link" style="font-family: 'Allerta Stencil', sans-serif;" href="{% url 'calendar' %}">Calendar</a> 
+                    </li>
+                   
+                     <li class="nav-item"> 
+                    	<a class="nav-link" style="font-family: 'Allerta Stencil', sans-serif;" href="{% url 'contact' %}">Contact</a>	
+                    </li>	
+              </ul>
+
+		</div>
+
+	<form class="form-inline form1" action="/action_page.php col ">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-danger" type="submit">Search</button>
+    </form>
+
+    <div class="col-3">
+			<a href="">
+				<button class="btn btn-primary ">Sign Up - Free!</button>
+			</a>
+			<a href="">
+				<button class="btn btn-primary">Log In</button>
+			</a>
+		</div>
+		
+	</div>
+ </nav>
+
+
+
+
+
+
+  <img class="card-img-top" src="{% static '/img/charitypic.jpg' %}" alt="Card image" style="opacity: .8;">
+  <div class="card-img-overlay">
+
+ 
+
+
+   
+ 
+ 
+</div>
+</div>
+
+
+<div class="all" style="">
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+   <a  class="btn btn-primary"  style="margin-left: 0px; margin-top: -20px; padding:10px;  background-color:#0062cc; color: white; font-family: 'Allerta Stencil', sans-serif; " href="">Charity</a>
+  <p class="lead" style=" color: white;"><i>"While actions are always to be judged by the immutable standard of right and wrong, and judgments we pass upon men must be qualified by considerations of age, country, station and other accidental circumstances; and it will then be found that he who is most charitable in his judgment is generally th ..."</i></p>
+</div>
+
+<div class="container" style=" padding-right: 80px;">
+  <div class="card-deck mb-3 text-center">
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal" style="color: black; font-family: 'Roman', sans-serif; ">Gift an education...Make a life !</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title" style="color: black; margin-left: 10px;">$1,200 <small class="text-muted">/ estimated</small></h1>
+        <ul class="list-unstyled mt-2 mb-4" style="color: black;">
+          <li><b>Organization:</b> <u>Isha Education</u></li>
+          <li><b>Location:</b> Coimbatore</li>
+          <li><b>Website:</b> http:/​/​www.ishaeducation.org</li>
+          <li><b>Ramaining:</b> $643,234 </li>
+        </ul>
+        <a  class="btn btn-lg btn-block btn-primary btn-outline-primary" href="https://www.globalgiving.org/dy/v2/checkout/billing/">Donate</a>
+      </div>
+    </div>
+    <div class="card mb-3 shadow-sm" style="">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal" style="color: black; font-family: 'Roman', sans-serif;">Lifeskills for 2,587 Children in South Africa</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title" style="color: black; margin-left: 10px;">$2,340 <small class="text-muted">/ estimated</small></h1>
+        <ul class="list-unstyled mt-3 mb-4" style="color: black; font-family: 'Roman', sans-serif;">
+          <li><b>Organization:</b> Keep The Dream 196</li>
+          <li> <b>Location:</b> Modjadjiskloof, Limpopo - South Africa</li>
+          <li> <b>Website:</b> http:/​/​www.keepthedream196.com</li>
+          <li><b>Ramaining:</b> $343,034 </li>
+        </ul>
+         <a  class="btn btn-lg btn-block btn-primary btn-outline-primary" href="https://www.globalgiving.org/dy/v2/checkout/billing/">Donate</a>
+      </div>
+    </div>
+    <div class="card mb-3 shadow-sm" style="">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal" style="color: black;">Promote Quality & Sustainable Education in Uganda</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title" style="color: black; margin-left: 10px;">$3,100 <small class="text-muted">/ estimated</small></h1>
+        <ul class="list-unstyled mt-3 mb-4" style="color: black;">
+          <li><b>Organization:</b> Kole Intellectual Forum</li>
+          <li> <b>Location:</b> Kampala, Uganda - Uganda</li>
+          <li> <b>Website:</b> https:/​/​globalkifa.org</li>
+          <li><b>Ramaining:</b> $960,170 </li>
+        </ul>
+         <a  class="btn btn-lg btn-block btn-primary btn-outline-primary" href="https://www.globalgiving.org/projects/will-benefit-75-pupils-of-apedi-and-angic-p-s-1/">Donate</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+    <script type="text/javascript">
+      var IS_IPAD=navigator.userAgent.match(/iPad/i)!=null;
+      $("#header-bar").hide();
+      clicked="desktop";
+      var t= {
+        desktop:"100%",tabletlandscape:1040,tabletportrait:788,mobilelandscape:500,mobileportrait:340,placebo:0
+      }
+      ;
+      jQuery(".responsive a").on("click",function() {
+        var e=jQuery(this);
+        for (device in t) {
+          if(e.hasClass(device)) {
+            clicked=device;
+            jQuery("#iframe").width(t[device]);
+            if(clicked==device) {
+              jQuery(".responsive a").removeClass("active");
+              e.addClass("active")
+            }
+          }
+        }
+        return false
+      }
+      );
+      if(IS_IPAD) {
+        $("#iframe").css("padding-bottom","60px")
+      }
+    </script>
+
+        <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-55162400-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+
+
+
+
+
+
+
+
+<footer class="page-footer font-small unique-color-dark rw1" >
+
+  <div class="btn btn-primary">
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0" >
+          <h6 class="mb-0 text-lig  ht">Urinov Azizbek 20162672 Dongseo University Capstone Design</h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f white-text mr-4"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter white-text mr-4"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram white-text"> </i>
+          </a>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5 ">
+
+    <!-- Grid row -->
+    <div class="row mt-3 ">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Muslim.kr</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p style="color: white">Muslim Charity is an international relief and development non-governmental organization that aims to alleviate the suffering of the world's poorest people.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold ft1">Products</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">Online Shopping</a>
+        </p>
+        <p>
+          <a href="#!">Answers and Questions</a>
+        </p>
+        <p>
+          <a href="#!">News and Schedule</a>
+        </p>
+        <p>
+          <a href="#!">Chrity</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold ft1">Useful links</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">Your Account</a>
+        </p>
+        <p>
+          <a href="#!">Comments</a>
+        </p>
+        <p>
+          <a href="#!">Shipping products</a>
+        </p>
+        <p>
+          <a href="#!">Help</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-2 col-xl-3 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold ft1">Contact</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p class="ft1">
+          <i class="fas fa-home mr-3"></i> South Korea, Busan, Dongseo University</p>
+        <p class="ft1" >
+          <i class="fas fa-envelope mr-3"></i> urinovazizbek@gmail.com</p>
+        <p class="ft1">
+          <i class="fas fa-phone mr-3"></i> 010 4868 9910</p>
+        <p class="ft1">
+          <i class="fas fa-print mr-3"></i> 010 4868 9910</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 ft1">© 2019 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> Muslim.kr</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+ 
+</body>
+
+
+
+
+
+</html>
